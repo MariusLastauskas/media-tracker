@@ -1,3 +1,5 @@
+# Site is running at https://blissful-wing-789977.netlify.com/ 👈
+
 # 🏁 Quick Start:
 
 - Clone repo:
