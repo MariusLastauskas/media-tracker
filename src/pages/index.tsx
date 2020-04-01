@@ -1,5 +1,7 @@
 import React from 'react';
 
-const RootComponent = () => <div>Hello world!</div>;
+import '../style/css/index.css';
+
+const RootComponent = () => <div className="hello-world">Hello world!</div>;
 
 export default RootComponent;
