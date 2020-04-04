@@ -1,0 +1,11 @@
+@import '../../style/index.scss';
+
+.header {
+    background-color: $header-background-color;
+    color: $header-text-color;
+    height: $header-height;
+
+    &__holder {
+        @include center-main-content();
+    }
+}
