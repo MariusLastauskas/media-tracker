@@ -1,0 +1,32 @@
+@import '../../style/index.scss';
+
+.button {
+    $this: &;
+
+    @include typography-navigation-button();
+
+    background-color: transparent;
+    border: none;
+    display: inline-flex;
+    margin: auto;
+    transition-duration: $global-transition-duration;
+    transition-property: background-color;
+
+    &__link {
+        border-radius: $button-border-radius;
+        color: $button-link-color-inactive;
+        text-decoration: none;
+        margin: auto $button-margin-horizontal;
+        padding: $button-padding;
+
+        &#{$this}--active {
+            color: $button-link-color-active;
+        }
+
+        &:focus,
+        &:hover {
+            background-color: $button-link-background-color-focus;
+            color: $button-link-color-focus;
+        }
+    }
+}

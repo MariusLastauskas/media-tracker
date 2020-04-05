@@ -1,6 +1,6 @@
 $defaultFontSize: 16;
 
-@function getRem($size) {
+@function get-rem($size) {
     $remSize: $size / $defaultFontSize;
 
     @return #{$remSize}rem;

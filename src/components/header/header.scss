@@ -7,5 +7,7 @@
 
     &__holder {
         @include center-main-content();
+
+        height: 100%;
     }
 }

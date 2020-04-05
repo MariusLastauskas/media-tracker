@@ -3,3 +3,8 @@
     margin: auto;
     max-width: $main-max-width;
 }
+
+@mixin column-layout($column-width) {
+    display: inline-flex;
+    flex: $column-width;
+}
