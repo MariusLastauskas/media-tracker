@@ -1,0 +1,5 @@
+@mixin center-main-content() {
+    display: flex;
+    margin: auto;
+    max-width: $main-max-width;
+}

@@ -1,0 +1,10 @@
+@import '../../style/index.scss';
+
+.filter {
+    background-color: $filter-background-color;
+    height: $filter-height;
+
+    &__holder {
+        @include center-main-content();
+    }
+}

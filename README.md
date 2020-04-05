@@ -58,11 +58,7 @@ More about that in Gatsby readme documentation below.
 
 ## `Netlify CMS`
 
-Content management system used to feed `Gatsby.js` with post data. `Netlify CMS` uses `MarkDown` files to store post data in them and provides admin panel, that can be found in:
-
-```
-https://blissful-wing-789977.netlify.com/admin/#/
-```
+Content management system used to feed `Gatsby.js` with post data. `Netlify CMS` uses `MarkDown` files to store post data in them.
 
 Another big feature of `Netlify` is continues integration support by synchronizing with `GitHub` repo. Curent configuration uses `deploy` branch. Every time `Netlify` detects any changes in this branch it deploys it to the live site. Also Every time a PR into `deploy` branch is created it will automatically run tests and lounches a staging site, so that it could be tested before merge into `deploy` branch and deployment.
 
@@ -72,34 +68,6 @@ Another big feature of `Netlify` is continues integration support by synchronizi
 - `TypeScript`.
 - `StyleLint` is used for `Sass`.
 - `pre-commit` is used to perform additional static analysis check before commit is made.
-
-# CSS preprocessor
-
-`Sass` is used as a CSS preprocessor (`scss` syntax). All styles lives in `src/style` folder. It is structured as:
-
-    .
-    └── src
-        └── style
-            ├── css
-            |   └── index.css
-            └── scss
-                ├── [... component folder ...]
-                .   .
-                .   .
-                .   └── [... component .scss file ...]
-                .
-                └── index.scss
-
-- Styles folder contains `css` and `scss` folders.
-- `scss` folder holds component folders with component specific `.scss` files.
-- `scss/index.scss` file contains all the inports of component styles.
-- `css/index.scss` contains compiled, minified stylings.
-
-Gulp is configured to watch changes in any of `styles/scss` subfolders and produce minified `.css` file of all stylings into `style/css/index.css`. It can be started by running command:
-
-```
-npm run start:gulp
-```
 
 # Gatsby readme:
 

@@ -1,7 +1,18 @@
 import React from 'react';
 
-import '../style/css/index.css';
+import { Header } from '../components/header';
+import { Filter } from '../components/filter';
 
-const RootComponent = () => <div className="hello-world">Hello world!</div>;
+import '../style/index.scss';
+import './index.scss';
+
+const RootComponent = () => (
+    <>
+        <Header />
+        <main>
+            <Filter />
+        </main>
+    </>
+);
 
 export default RootComponent;
