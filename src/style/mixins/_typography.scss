@@ -1,0 +1,11 @@
+@mixin base-font() {
+    font-family: 'Roboto';
+}
+
+@mixin typography-header() {
+    @include base-font();
+
+    color: $color-typography-secondary;
+    font-size: get-rem(12);
+    font-weight: 600;
+}

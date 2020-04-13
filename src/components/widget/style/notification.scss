@@ -1,0 +1,18 @@
+@import '../../../style/index.scss';
+
+.notification {
+    display: inline-flex;
+
+    &__icon {
+        border: 1px solid $header-background-color;
+        border-radius: $global-border-radius;
+        cursor: pointer;
+        height: $notification-icon-size;
+        padding: $notification-padding;
+        width: $notification-icon-size;
+
+        &:hover {
+            border-color: $widget-hover-border-color;
+        }
+    }
+}

@@ -1,0 +1,65 @@
+@import '../../../style/index.scss';
+
+.search {
+    $this: &;
+
+    display: inline-flex;
+
+    &--unfolded {
+        #{$this}__input {
+            padding: $search-input-padding;
+            width: $search-input-width;
+        }
+
+        #{$this}__icon {
+            border-color: $widget-hover-border-color;
+            padding: $search-icon-padding;
+        }
+    }
+
+    &__icon {
+        @include transition-animation(background-color);
+
+        border: 1px solid $header-background-color;
+        border-bottom-right-radius: $global-border-radius;
+        border-top-right-radius: $global-border-radius;
+        cursor: pointer;
+        height: $search-icon-size;
+        padding: $search-icon-padding;
+        width: $search-icon-size;
+
+        &:hover {
+            border-color: $widget-hover-border-color;
+            border-radius: $global-border-radius;
+            padding: $search-icon-padding;
+        }
+    }
+
+    &__input {
+        @include transition-animation(width);
+
+        border: none;
+        border-bottom-left-radius: $global-border-radius;
+        border-top-left-radius: $global-border-radius;
+        height: $search-input-height;
+        padding: $search-input-padding 0;
+        width: 0;
+
+        &:focus {
+            padding: $search-input-padding;
+            width: $search-input-width;
+
+            & ~ {
+                #{$this}__icon {
+                    border-color: $widget-hover-border-color;
+                    padding: $search-icon-padding;
+
+                    &:hover {
+                        border-top-left-radius: 0;
+                        border-bottom-left-radius: 0;
+                    }
+                }
+            }
+        }
+    }
+}

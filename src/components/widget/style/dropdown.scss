@@ -1,0 +1,87 @@
+@import '../../../style/index.scss';
+
+.dropdown {
+    $this: &;
+
+    display: inline-flex;
+    position: relative;
+
+    &--collapsed {
+        #{$this}__list {
+            @include hide-visually();
+
+            margin-top: 0;
+            opacity: 0;
+            top: 54px;
+        }
+    }
+
+    &__button {
+        @include typography-header();
+
+        background-color: $header-background-color;
+        border: 1px solid $header-background-color;
+        border-radius: $global-border-radius;
+        color: $dropdown-color;
+        cursor: pointer;
+        height: $dropdown-button-height;
+        margin-top: $dropdown-button-margin-top;
+        padding: $dropdown-button-padding;
+
+        &:hover {
+            border-color: $widget-hover-border-color;
+        }
+    }
+
+    &__item {
+        @include typography-header();
+
+        padding: $dropdown-item-margin;
+        text-align: center;
+
+        &:first-child {
+            border-top-left-radius: $global-border-radius;
+            border-top-right-radius: $global-border-radius;
+        }
+
+        a {
+            color: $dropdown-color;
+            text-decoration: none;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+
+    &__list {
+        @include transition-animation('opacity, top');
+
+        background-color: $header-background-color;
+        border-radius: $global-border-radius;
+        box-shadow: 2px 2px 6px 1px #999;
+        right: 0;
+        list-style: none;
+        opacity: 1;
+        padding: 0;
+        position: absolute;
+        top: $dropdown-list-position-top;
+        min-width: $dropdown-list-min-width;
+        top: 48px;
+        width: max-content;
+        z-index: 1;
+
+        &::after {
+            background-color: $header-background-color;
+            content: '';
+            height: 8px;
+            width: 8px;
+            position: absolute;
+            top: -4px;
+            right: 20px;
+            transform: rotate(45deg);
+
+            z-index: -1;
+        }
+    }
+}
