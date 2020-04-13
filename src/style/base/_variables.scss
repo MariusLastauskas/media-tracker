@@ -1,9 +1,9 @@
-$button-link-background-color-focus: $color-additional-white;
-$button-link-color-active: $color-additional-white;
-$button-link-color-focus: $color-typography-main;
-$button-link-color-inactive: $color-typography-secondary;
-$button-link-margin: 0 get-rem(13);
-$button-link-padding: get-rem(8) get-rem(10);
+$button-header-background-color-focus: $color-additional-white;
+$button-header-color-active: $color-additional-white;
+$button-header-color-focus: $color-typography-main;
+$button-header-color-inactive: $color-typography-secondary;
+$button-header-margin: 0 get-rem(13);
+$button-header-padding: get-rem(8) get-rem(10);
 
 $dropdown-button-height: get-rem(36);
 $dropdown-button-margin-top: get-rem(-3);
@@ -15,7 +15,16 @@ $dropdown-item-margin: get-rem(8) 0;
 $dropdown-list-min-width: get-rem(100);
 $dropdown-list-position-top: get-rem(40);
 
+$filter-button-border-color: $color-main-blue;
+$filter-button-border-width: get-rem(2);
+$filter-button-margin: get-rem(0) get-rem(11);
+$filter-button-padding: get-rem(4) get-rem(8);
+$filter-button-padding-active: get-rem(4) get-rem(8) get-rem(2);
+$filter-wrapper-border-color: #e6e6e8;
+$filter-wrapper-padding: 0 get-rem(14);
+
 $global-border-radius: 4px;
+$global-border-width: get-rem(1);
 $global-transition-duration: 0.2s;
 
 $header-background-color: $color-main-black;
