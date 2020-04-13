@@ -2,9 +2,31 @@
 
 .filter {
     background-color: $filter-background-color;
+    border-bottom: $global-border-width solid $filter-wrapper-border-color;
     height: $filter-height;
 
-    &__holder {
+    &__button {
+        @include typography-button();
+
+        margin: $filter-button-margin;
+        padding: $filter-button-padding;
+
+        &:first-child {
+            margin-left: 0;
+        }
+
+        &.button--active {
+            color: $color-typography-main;
+            border-bottom: $filter-button-border-width solid
+                $filter-button-border-color;
+            padding: $filter-button-padding-active;
+        }
+    }
+
+    &__wrapper {
         @include center-main-content();
+
+        height: 100%;
+        padding: $filter-wrapper-padding;
     }
 }

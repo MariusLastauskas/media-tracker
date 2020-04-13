@@ -2,7 +2,7 @@
     font-family: 'Roboto';
 }
 
-@mixin typography-header() {
+@mixin typography-button() {
     @include base-font();
 
     color: $color-typography-secondary;
