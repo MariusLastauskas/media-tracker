@@ -20,7 +20,7 @@
     &__icon {
         @include transition-animation(background-color);
 
-        border: 1px solid $header-background-color;
+        border: $global-border-width solid $header-background-color;
         border-bottom-right-radius: $global-border-radius;
         border-top-right-radius: $global-border-radius;
         cursor: pointer;

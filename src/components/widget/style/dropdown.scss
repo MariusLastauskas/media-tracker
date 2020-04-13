@@ -17,10 +17,10 @@
     }
 
     &__button {
-        @include typography-header();
+        @include typography-button();
 
         background-color: $header-background-color;
-        border: 1px solid $header-background-color;
+        border: $global-border-width solid $header-background-color;
         border-radius: $global-border-radius;
         color: $dropdown-color;
         cursor: pointer;
@@ -34,7 +34,7 @@
     }
 
     &__item {
-        @include typography-header();
+        @include typography-button();
 
         padding: $dropdown-item-margin;
         text-align: center;

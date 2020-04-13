@@ -4,7 +4,7 @@
     display: inline-flex;
 
     &__icon {
-        border: 1px solid $header-background-color;
+        border: $global-border-width solid $header-background-color;
         border-radius: $global-border-radius;
         cursor: pointer;
         height: $notification-icon-size;

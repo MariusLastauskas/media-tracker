@@ -4,4 +4,22 @@
     @include column-layout(2);
 
     justify-content: flex-end;
+
+    &__button {
+        border-radius: $global-border-radius;
+        color: $button-header-color-inactive;
+        margin: $button-header-margin;
+        padding: $button-header-padding;
+        text-decoration: none;
+
+        &.button--active {
+            color: $button-header-color-active;
+        }
+
+        &:focus,
+        &:hover {
+            background-color: $button-header-background-color-focus;
+            color: $button-header-color-focus;
+        }
+    }
 }
