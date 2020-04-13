@@ -1,0 +1,30 @@
+@import '../../style/index';
+
+.button {
+    $this: &;
+
+    @include transition-animation(background-color);
+    @include typography-header();
+
+    background-color: transparent;
+    border: none;
+    display: inline-flex;
+
+    &--link {
+        border-radius: $global-border-radius;
+        color: $button-link-color-inactive;
+        margin: $button-link-margin;
+        padding: $button-link-padding;
+        text-decoration: none;
+
+        &#{$this}--active {
+            color: $button-link-color-active;
+        }
+
+        &:focus,
+        &:hover {
+            background-color: $button-link-background-color-focus;
+            color: $button-link-color-focus;
+        }
+    }
+}

@@ -1,0 +1,14 @@
+@import '../../style/index.scss';
+
+.widget {
+    display: flex;
+    margin: $widget-margin;
+
+    &:first-child {
+        margin-left: auto;
+    }
+
+    &:last-child {
+        margin-right: 0;
+    }
+}

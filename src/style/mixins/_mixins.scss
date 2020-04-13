@@ -1,0 +1,26 @@
+@import '../base/variables';
+
+@mixin center-main-content() {
+    display: flex;
+    margin: auto;
+    max-width: $main-max-width;
+}
+
+@mixin column-layout($column-width) {
+    display: inline-flex;
+    flex: $column-width;
+}
+
+@mixin hide-visually() {
+    position: absolute !important; /* stylelint-disable-line declaration-no-important */
+    clip: rect(1px, 1px, 1px, 1px);
+    overflow: hidden;
+    height: 1px;
+    width: 1px;
+    word-wrap: normal;
+}
+
+@mixin transition-animation($attributes) {
+    transition-duration: $global-transition-duration;
+    transition-property: $attributes;
+}

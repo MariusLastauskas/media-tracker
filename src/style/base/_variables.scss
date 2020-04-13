@@ -1,0 +1,46 @@
+$button-link-background-color-focus: $color-additional-white;
+$button-link-color-active: $color-additional-white;
+$button-link-color-focus: $color-typography-main;
+$button-link-color-inactive: $color-typography-secondary;
+$button-link-margin: 0 get-rem(13);
+$button-link-padding: get-rem(8) get-rem(10);
+
+$dropdown-button-height: get-rem(36);
+$dropdown-button-margin-top: get-rem(-3);
+$dropdown-button-padding: get-rem(2) get-rem(6);
+$dropdown-color: $color-additional-white;
+$dropdown-icon-margin: get-rem(12) 0 get-rem(11) get-rem(10);
+$dropdown-icon-size: get-rem(8);
+$dropdown-item-margin: get-rem(8) 0;
+$dropdown-list-min-width: get-rem(100);
+$dropdown-list-position-top: get-rem(40);
+
+$global-border-radius: 4px;
+$global-transition-duration: 0.2s;
+
+$header-background-color: $color-main-black;
+$header-height: get-rem(30);
+$header-padding: get-rem(14);
+$header-text-color: $color-additional-white;
+
+$filter-background-color: $color-additional-white;
+$filter-height: get-rem(48);
+
+$main-background-color: $color-main-gray;
+$main-max-width: get-rem(1200);
+
+$notification-icon-size: get-rem(20);
+$notification-padding: get-rem(2) get-rem(4) get-rem(4);
+
+$profile-image-size: get-rem(30);
+$profile-name-margin: get-rem(8) 0 get-rem(8) get-rem(10);
+
+$search-height: get-rem(22);
+$search-icon-size: get-rem(18);
+$search-icon-padding: get-rem(4);
+$search-input-height: get-rem(20);
+$search-input-padding: get-rem(4);
+$search-input-width: get-rem(150);
+
+$widget-hover-border-color: $color-additional-white;
+$widget-margin: 0 get-rem(10);

@@ -1,0 +1,21 @@
+@import '../../../style/index.scss';
+
+.profile {
+    display: inline-flex;
+
+    &__icon {
+        height: $dropdown-icon-size;
+        margin: $dropdown-icon-margin;
+        width: $dropdown-icon-size;
+    }
+
+    &__image {
+        border-radius: $global-border-radius;
+        height: $profile-image-size;
+        width: $profile-image-size;
+    }
+
+    &__name {
+        margin: $profile-name-margin;
+    }
+}
