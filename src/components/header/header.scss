@@ -4,8 +4,15 @@
     background-color: $header-background-color;
     color: $header-text-color;
     height: $header-height;
+    padding: $header-padding;
 
-    &__holder {
+    &__widgets {
+        @include column-layout(1);
+
+        text-align: right;
+    }
+
+    &__wrapper {
         @include center-main-content();
 
         height: 100%;

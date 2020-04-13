@@ -1,23 +1,21 @@
-@import '../../style/index.scss';
+@import '../../style/index';
 
 .button {
     $this: &;
 
-    @include typography-navigation-button();
+    @include transition-animation(background-color);
+    @include typography-header();
 
     background-color: transparent;
     border: none;
     display: inline-flex;
-    margin: auto;
-    transition-duration: $global-transition-duration;
-    transition-property: background-color;
 
-    &__link {
-        border-radius: $button-border-radius;
+    &--link {
+        border-radius: $global-border-radius;
         color: $button-link-color-inactive;
+        margin: $button-link-margin;
+        padding: $button-link-padding;
         text-decoration: none;
-        margin: auto $button-margin-horizontal;
-        padding: $button-padding;
 
         &#{$this}--active {
             color: $button-link-color-active;

@@ -16,7 +16,7 @@ const Button = ({
 }) => {
     const mainComponentClass = 'button';
     const className = classNames(mainComponentClass, {
-        [`${mainComponentClass}__${variant}`]: variant === VARIANTS.LINK,
+        [`${mainComponentClass}--${variant}`]: variant === VARIANTS.LINK,
         [`${mainComponentClass}--active`]: isActive,
     });
 
