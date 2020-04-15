@@ -1,0 +1,13 @@
+@import '../../style/index';
+
+.card {
+    @include column-layout(1);
+
+    background-color: $card-background-color;
+    border-radius: $global-border-radius;
+    height: min-content;
+    margin: $card-margin;
+    max-width: $card-max-width;
+    min-width: $card-min-width;
+    padding: $card-padding;
+}

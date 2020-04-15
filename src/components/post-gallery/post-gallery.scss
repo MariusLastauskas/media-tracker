@@ -1,0 +1,7 @@
+@import '../../style/index';
+
+.post-gallery {
+    @include center-main-content(20);
+
+    flex-wrap: wrap;
+}
