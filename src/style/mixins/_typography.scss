@@ -2,10 +2,16 @@
     font-family: 'Roboto';
 }
 
-@mixin typography-button() {
+@mixin typography-main-secondary() {
     @include base-font();
 
     color: $color-typography-secondary;
     font-size: get-rem(12);
+    font-weight: 400;
+}
+
+@mixin typography-main-secondary-bolded() {
+    @include typography-main-secondary();
+
     font-weight: 600;
 }

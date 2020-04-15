@@ -5,6 +5,12 @@ $button-header-color-inactive: $color-typography-secondary;
 $button-header-margin: 0 get-rem(13);
 $button-header-padding: get-rem(8) get-rem(10);
 
+$card-background-color: $color-additional-white;
+$card-margin: get-rem(10);
+$card-max-width: get-rem(342);
+$card-min-width: get-rem(250);
+$card-padding: get-rem(19);
+
 $dropdown-button-height: get-rem(36);
 $dropdown-button-margin-top: get-rem(-3);
 $dropdown-button-padding: get-rem(2) get-rem(6);
@@ -36,10 +42,19 @@ $filter-background-color: $color-additional-white;
 $filter-height: get-rem(48);
 
 $main-background-color: $color-main-gray;
-$main-max-width: get-rem(1200);
+$main-max-width-unitles: 1200;
+$main-max-width: get-rem($main-max-width-unitles);
 
 $notification-icon-size: get-rem(20);
 $notification-padding: get-rem(2) get-rem(4) get-rem(4);
+
+$post-input-border-color: #d9dce2;
+$post-input-height: get-rem(14);
+$post-input-margin: get-rem(8) get-rem(2) get-rem(6) 0;
+$post-input-padding: get-rem(11) get-rem(36) get-rem(11) get-rem(11);
+$post-input-button-size: get-rem(18);
+$post-input-button-position-right: get-rem(34);
+$post-input-button-position-top: get-rem(38);
 
 $profile-image-size: get-rem(30);
 $profile-name-margin: get-rem(8) 0 get-rem(8) get-rem(10);

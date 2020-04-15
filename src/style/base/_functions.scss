@@ -5,3 +5,9 @@ $defaultFontSize: 16;
 
     @return #{$remSize}rem;
 }
+
+@function add($a, $b) {
+    $sum: get-rem($a + $b);
+
+    @return #{$sum};
+}

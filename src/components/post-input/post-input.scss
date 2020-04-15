@@ -1,0 +1,27 @@
+@import '../../style/index';
+
+.post-input {
+    position: relative;
+
+    &__button {
+        position: absolute;
+        right: $post-input-button-position-right;
+        top: $post-input-button-position-top;
+    }
+
+    &__icon {
+        height: $post-input-button-size;
+        width: $post-input-button-size;
+    }
+
+    &__input {
+        @include typography-main-secondary();
+
+        border: $global-border-width solid $post-input-border-color;
+        border-radius: $global-border-radius;
+        height: $post-input-height;
+        margin: $post-input-margin;
+        padding: $post-input-padding;
+        width: 100%;
+    }
+}
