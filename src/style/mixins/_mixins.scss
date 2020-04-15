@@ -1,9 +1,12 @@
+@import '../base/functions';
 @import '../base/variables';
 
-@mixin center-main-content() {
+@mixin center-main-content($extra-width: 0) {
+    $sum: add($main-max-width-unitles, $extra-width);
+
     display: flex;
     margin: auto;
-    max-width: $main-max-width;
+    max-width: $sum;
 }
 
 @mixin column-layout($column-width) {
