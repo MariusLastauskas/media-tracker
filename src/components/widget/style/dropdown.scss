@@ -17,7 +17,7 @@
     }
 
     &__button {
-        @include typography-main-secondary-bolded();
+        @include typography-secondary-bolded();
 
         background-color: $header-background-color;
         border: $global-border-width solid $header-background-color;
@@ -34,7 +34,7 @@
     }
 
     &__item {
-        @include typography-main-secondary-bolded();
+        @include typography-secondary-bolded();
 
         padding: $dropdown-item-margin;
         text-align: center;

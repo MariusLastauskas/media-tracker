@@ -2,7 +2,29 @@
     font-family: 'Roboto';
 }
 
-@mixin typography-main-secondary() {
+@mixin typography-accent() {
+    @include base-font();
+
+    color: #c0c4c5;
+    font-size: get-rem(10);
+    font-weight: 400;
+}
+
+@mixin typography-main() {
+    @include base-font();
+
+    color: $color-typography-main;
+    font-size: get-rem(12);
+    font-weight: 400;
+}
+
+@mixin typography-main-bold() {
+    @include typography-main();
+
+    font-weight: 600;
+}
+
+@mixin typography-secondary() {
     @include base-font();
 
     color: $color-typography-secondary;
@@ -10,8 +32,8 @@
     font-weight: 400;
 }
 
-@mixin typography-main-secondary-bolded() {
-    @include typography-main-secondary();
+@mixin typography-secondary-bolded() {
+    @include typography-secondary();
 
     font-weight: 600;
 }
