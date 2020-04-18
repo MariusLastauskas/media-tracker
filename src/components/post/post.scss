@@ -1,0 +1,130 @@
+@import '../../style/index';
+
+.post {
+    $this: &;
+
+    flex-direction: column;
+
+    &:nth-child(3n + 1) {
+        order: 1;
+    }
+
+    &:nth-child(3n + 2) {
+        order: 2;
+    }
+
+    &:nth-child(3n) {
+        order: 3;
+    }
+
+    &--blog {
+        position: relative;
+
+        &::after {
+            @include typography-main();
+
+            background-color: $color-main-blue;
+            border-bottom-left-radius: $global-border-radius;
+            border-top-left-radius: $global-border-radius;
+            color: #fff;
+            content: 'BLOG';
+            height: 30px;
+            line-height: 30px;
+            position: absolute;
+            right: 0;
+            text-align: center;
+            top: 30px;
+            width: 60px;
+        }
+    }
+
+    &--event {
+        background-color: $post-background-color-event;
+
+        #{$this} {
+            &__date,
+            &__name,
+            &__text,
+            &__title {
+                color: $color-additional-white;
+            }
+        }
+    }
+
+    &--show-like-share {
+        padding-bottom: 0;
+    }
+
+    &__avatar {
+        border-radius: 50%;
+        height: $post-avatar-size;
+        margin: $card-padding;
+        width: $post-avatar-size;
+    }
+
+    &__button {
+        border-top: 1px solid #f0f0f1;
+        display: flex;
+        height: 50px;
+        flex: 1;
+        justify-content: center;
+
+        &:first-child {
+            border-right: 1px solid #f0f0f1;
+        }
+    }
+
+    &__button-icon {
+        height: 19px;
+        width: 19px;
+    }
+
+    &__button-text {
+        padding: 2px 9px;
+    }
+
+    &__credentials {
+        display: flex;
+        flex-direction: column;
+        margin-top: 28px;
+    }
+
+    &__date {
+        @include typography-accent();
+    }
+
+    &__footer {
+        display: flex;
+    }
+
+    &__header {
+        display: flex;
+    }
+
+    &__image {
+        height: 180px;
+        object-fit: cover;
+    }
+
+    &__like-button-count {
+        &--liked {
+            color: $color-main-blue;
+        }
+    }
+
+    &__name {
+        @include typography-main-bold();
+    }
+
+    &__text {
+        @include typography-secondary();
+
+        margin: 0 $card-padding 20px $card-padding;
+    }
+
+    &__title {
+        @include typography-main-bold();
+
+        margin: 0 $card-padding 14px;
+    }
+}

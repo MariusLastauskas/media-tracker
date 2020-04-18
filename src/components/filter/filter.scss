@@ -6,7 +6,7 @@
     height: $filter-height;
 
     &__button {
-        @include typography-main-secondary-bolded();
+        @include typography-secondary-bolded();
 
         margin: $filter-button-margin;
         padding: $filter-button-padding;

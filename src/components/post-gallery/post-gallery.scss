@@ -3,5 +3,15 @@
 .post-gallery {
     @include center-main-content(20);
 
-    flex-wrap: wrap;
+    display: flex;
+    flex-flow: column wrap;
+    height: $post-gallery-height;
+
+    &::after,
+    &::before {
+        content: '';
+        flex-basis: 100%;
+        width: 0;
+        order: 2;
+    }
 }

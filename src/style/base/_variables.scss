@@ -7,8 +7,8 @@ $button-header-padding: get-rem(8) get-rem(10);
 
 $card-background-color: $color-additional-white;
 $card-margin: get-rem(10);
-$card-max-width: get-rem(342);
-$card-min-width: get-rem(250);
+$card-max-width: get-rem(380);
+$card-min-width: get-rem(290);
 $card-padding: get-rem(19);
 
 $dropdown-button-height: get-rem(36);
@@ -48,9 +48,14 @@ $main-max-width: get-rem($main-max-width-unitles);
 $notification-icon-size: get-rem(20);
 $notification-padding: get-rem(2) get-rem(4) get-rem(4);
 
+$post-avatar-size: get-rem(50);
+$post-background-color-event: $color-main-red;
+
+$post-gallery-height: get-rem(2000);
+
 $post-input-border-color: #d9dce2;
 $post-input-height: get-rem(14);
-$post-input-margin: get-rem(8) get-rem(2) get-rem(6) 0;
+$post-input-margin: get-rem(27) get-rem(21) get-rem(25) get-rem(19);
 $post-input-padding: get-rem(11) get-rem(36) get-rem(11) get-rem(11);
 $post-input-button-size: get-rem(18);
 $post-input-button-position-right: get-rem(34);
