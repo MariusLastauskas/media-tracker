@@ -1,20 +1,25 @@
 backend:
-  name: github
-  repo: MariusLastauskas/media-tracker
+    name: github
+    repo: MariusLastauskas/media-tracker
+    branch: deploy
 
 media_folder: static/img
 public_folder: /img
 
 collections:
-  - name: 'blog'
-    label: 'Blog'
-    folder: 'content/blog'
-    create: true
-    slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
-    editor:
-      preview: false
-    fields:
-      - { label: 'Title', name: 'title', widget: 'string' }
-      - { label: 'Publish Date', name: 'date', widget: 'datetime' }
-      - { label: 'Description', name: 'description', widget: 'string' }
-      - { label: 'Body', name: 'body', widget: 'markdown' }
+    - name: 'blog'
+      label: 'Blog'
+      folder: 'content/blog'
+      create: true
+      slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
+      editor:
+          preview: false
+      fields:
+          - { label: 'AvatarImage', name: 'avatarImage', widget: 'string' }
+          - { label: 'IsEvent', name: 'isEvent', widget: 'boolean' }
+          - { label: 'Author', name: 'author', widget: 'string' }
+          - { label: 'Title', name: 'title', widget: 'string' }
+          - { label: 'Publish Date', name: 'date', widget: 'datetime' }
+          - { label: 'Description', name: 'description', widget: 'string' }
+          - { label: 'Body', name: 'body', widget: 'markdown' }
+          - { label: 'Image', name: 'image', widget: 'string' }
