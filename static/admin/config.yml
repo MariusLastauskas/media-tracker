@@ -1,7 +1,6 @@
 backend:
     name: github
     repo: MariusLastauskas/media-tracker
-    branch: deploy
 
 media_folder: static/img
 public_folder: /img
