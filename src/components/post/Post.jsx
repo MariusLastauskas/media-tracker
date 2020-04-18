@@ -69,7 +69,12 @@ const Post = ({
                 </div>
             </div>
             {!!title && <h2 className={postTitleClass}>{title}</h2>}
-            {!!text && <p className={postTextClass}>{text}</p>}
+            {!!text && (
+                <div
+                    className={postTextClass}
+                    dangerouslySetInnerHTML={{ __html: text }} //TODO think about a way to get desired functionality without security issues
+                />
+            )}
             {!!image && (
                 <img
                     className={postImageClass}
