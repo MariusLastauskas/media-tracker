@@ -1,6 +1,8 @@
 @import '../style/index.scss';
 
 body {
+    @include base-font();
+
     background-color: $main-background-color;
     margin: 0;
 }

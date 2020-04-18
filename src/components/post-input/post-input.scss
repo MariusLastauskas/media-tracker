@@ -15,7 +15,7 @@
     }
 
     &__input {
-        @include typography-main-secondary();
+        @include typography-secondary();
 
         border: $global-border-width solid $post-input-border-color;
         border-radius: $global-border-radius;
