@@ -14,11 +14,19 @@ collections:
       editor:
           preview: false
       fields:
-          - { label: 'AvatarImage', name: 'avatarImage', widget: 'string' }
-          - { label: 'IsEvent', name: 'isEvent', widget: 'boolean' }
-          - { label: 'Author', name: 'author', widget: 'string' }
-          - { label: 'Title', name: 'title', widget: 'string' }
+          - {
+                label: 'IsEvent',
+                name: 'isEvent',
+                widget: 'boolean',
+                required: false,
+            }
+          - {
+                label: 'ShowLikeCommentSection',
+                name: 'showLikeCommentSection',
+                widget: 'boolean',
+                required: false,
+            }
+          - { label: 'Title', name: 'title', widget: 'string', required: false }
           - { label: 'Publish Date', name: 'date', widget: 'datetime' }
-          - { label: 'Description', name: 'description', widget: 'string' }
-          - { label: 'Body', name: 'body', widget: 'markdown' }
-          - { label: 'Image', name: 'image', widget: 'string' }
+          - { label: 'Body', name: 'body', widget: 'markdown', required: false }
+          - { label: 'Image', name: 'image', widget: 'string', required: false }

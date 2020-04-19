@@ -1,3 +1,16 @@
+import { MONTHS, NETLIFY_POST_AUTHOR, NETLIFY_POST_AVATAR } from './constants';
+
+const getDateString = input => {
+    const date = new Date(input);
+    const todayDate = new Date();
+
+    const isToday =
+        date.getMonth() === todayDate.getMonth() &&
+        date.getDate() === todayDate.getDate();
+
+    return isToday ? 'TODAY' : `${MONTHS[date.getMonth()]} ${date.getDate()}D`;
+};
+
 export const mapNetlifyPost = data => {
     const cardDataProps = [];
 
@@ -6,12 +19,12 @@ export const mapNetlifyPost = data => {
         const elementData = element.node.childMarkdownRemark.frontmatter;
 
         cardDataProps.push({
-            avatarImage: elementData.avatarImage,
-            date: elementData.date,
+            avatarImage: NETLIFY_POST_AVATAR,
+            date: getDateString(elementData.date),
             image: elementData.image,
             isBlog: true,
             isEvent: elementData.isEvent,
-            name: elementData.author,
+            name: NETLIFY_POST_AUTHOR,
             text: elementHtml,
             title: elementData.title,
         });

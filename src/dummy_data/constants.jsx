@@ -19,7 +19,7 @@ export const CARD_DATA_PROPS = [
         isLiked: true,
         name: 'Name Surname',
         likeCount: 15,
-        showLikeShareSection: true,
+        showLikeCommentSection: true,
         title: 'Post title',
         text:
             'Post text... Lorem Ipsum is simply dummy text of the printing and typesetting industry.' +
@@ -34,7 +34,7 @@ export const CARD_DATA_PROPS = [
         isBlog: true,
         name: 'Name Surname',
         likeCount: 15,
-        showLikeShareSection: true,
+        showLikeCommentSection: true,
         title: 'Post title',
         text:
             'Post text... Lorem Ipsum is simply dummy text of the printing and typesetting industry.' +
@@ -48,7 +48,7 @@ export const CARD_DATA_PROPS = [
             'https://interactive-examples.mdn.mozilla.net/media/examples/grapefruit-slice-332-332.jpg',
         name: 'Devbridge group',
         likeCount: 15,
-        showLikeShareSection: true,
+        showLikeCommentSection: true,
         text:
             'Post text... Lorem Ipsum is simply dummy text of the printing and typesetting industry.' +
             "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
@@ -98,7 +98,7 @@ export const CARD_DATA_PROPS = [
         date: 'TODAY',
         name: 'Devbridge group',
         likeCount: 15,
-        showLikeShareSection: true,
+        showLikeCommentSection: true,
         text:
             'Post text... Lorem Ipsum is simply dummy text of the printing and typesetting industry.' +
             "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
@@ -110,7 +110,7 @@ export const CARD_DATA_PROPS = [
             'https://interactive-examples.mdn.mozilla.net/media/examples/grapefruit-slice-332-332.jpg',
         name: 'Devbridge group',
         likeCount: 15,
-        showLikeShareSection: true,
+        showLikeCommentSection: true,
         text:
             'Post text... Lorem Ipsum is simply dummy text of the printing and typesetting industry.' +
             "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
@@ -121,7 +121,7 @@ export const CARD_DATA_PROPS = [
         date: 'TODAY',
         isBlog: true,
         name: 'Name Surname',
-        showLikeShareSection: true,
+        showLikeCommentSection: true,
         title: 'Post title',
         text:
             'Post text... Lorem Ipsum is simply dummy text of the printing and typesetting industry.' +
@@ -146,7 +146,7 @@ export const CARD_DATA_PROPS = [
         isBlog: true,
         name: 'Name Surname',
         likeCount: 15,
-        showLikeShareSection: true,
+        showLikeCommentSection: true,
         title: 'Post title',
         text:
             'Post text... Lorem Ipsum is simply dummy text of the printing and typesetting industry.' +
@@ -170,7 +170,7 @@ export const CARD_DATA_PROPS = [
         image:
             'https://interactive-examples.mdn.mozilla.net/media/examples/grapefruit-slice-332-332.jpg',
         isBlog: true,
-        showLikeShareSection: true,
+        showLikeCommentSection: true,
         name: 'Name Surname',
         title: 'Post title',
         text:
@@ -184,7 +184,7 @@ export const CARD_DATA_PROPS = [
         isBlog: true,
         name: 'Name Surname',
         likeCount: 15,
-        showLikeShareSection: true,
+        showLikeCommentSection: true,
         title: 'Post title',
         text:
             'Post text... Lorem Ipsum is simply dummy text of the printing and typesetting industry.' +
