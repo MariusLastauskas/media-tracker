@@ -4,7 +4,7 @@ import { graphql } from 'gatsby';
 import { Header } from '../components/header';
 import { Filter } from '../components/filter';
 import { PostGallery } from '../components/post-gallery';
-import { getCurratorPosts, mapNetlifyPost } from '../helpers/';
+import { getCurratorPosts, mapNetlifyPost, sortPosts } from '../helpers/';
 
 import '../style/index.scss';
 import './index.scss';
@@ -14,8 +14,7 @@ const RootComponent = data => {
 
     useEffect(() => {
         getCurratorPosts().then(resp => {
-            console.log(resp);
-            setCardDataProps([...cardDataProps, ...resp]);
+            setCardDataProps(sortPosts([...cardDataProps, ...resp]));
         });
     }, []);
 
