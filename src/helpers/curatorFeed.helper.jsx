@@ -5,10 +5,10 @@ import { getDateString } from './utils';
 
 const mapCurratorPosts = posts => {
     const cardDataProps = [];
-    console.log('RAW POST', posts);
 
     posts.forEach(post => {
         cardDataProps.push({
+            _date: new Date(post.source_created_at),
             avatarImage: NETWORK_ICONS[post.network_name],
             date: getDateString(post.source_created_at),
             image: post.image,

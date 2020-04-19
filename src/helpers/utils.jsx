@@ -10,3 +10,11 @@ export const getDateString = input => {
 
     return isToday ? 'TODAY' : `${MONTHS[date.getMonth()]} ${date.getDate()}D`;
 };
+
+const sortFunction = (a, b) => {
+    return b._date.getTime() - a._date.getTime();
+};
+
+export const sortPosts = posts => {
+    return posts.sort(sortFunction);
+};

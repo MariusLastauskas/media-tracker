@@ -7,9 +7,9 @@ export const mapNetlifyPost = data => {
     data.data.allFile.edges.forEach(element => {
         const elementHtml = element.node.childMarkdownRemark.html;
         const elementData = element.node.childMarkdownRemark.frontmatter;
-        console.log(elementData);
 
         cardDataProps.push({
+            _date: new Date(elementData.date),
             avatarImage: NETLIFY_POST_AVATAR,
             date: getDateString(elementData.date),
             image: elementData.image,
