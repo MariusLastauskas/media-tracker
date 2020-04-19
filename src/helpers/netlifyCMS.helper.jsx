@@ -24,6 +24,7 @@ export const mapNetlifyPost = data => {
             image: elementData.image,
             isBlog: true,
             isEvent: elementData.isEvent,
+            showLikeCommentSection: elementData.showLikeCommentSection,
             name: NETLIFY_POST_AUTHOR,
             text: elementHtml,
             title: elementData.title,
