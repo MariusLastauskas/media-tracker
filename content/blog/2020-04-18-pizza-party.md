@@ -5,6 +5,6 @@ author: Marius Lastauskas
 title: Pizza party
 date: 2020-04-18T14:13:27.181Z
 description: We will eat pizza
-image: /img/pizza.png
+image: ''
 ---
 ***Pizza pizza pizza!!!!***
