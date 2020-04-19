@@ -12,7 +12,7 @@ const Post = ({
     className,
     commentCount,
     date,
-    showLikeShareSection,
+    showLikeCommentSection,
     image,
     isBlog,
     isEvent,
@@ -29,7 +29,7 @@ const Post = ({
         {
             [`${mainComponentClass}--blog`]: isBlog,
             [`${mainComponentClass}--event`]: isEvent,
-            [`${mainComponentClass}--show-like-share`]: showLikeShareSection,
+            [`${mainComponentClass}--show-like-comment`]: showLikeCommentSection,
         },
         className
     );
@@ -82,7 +82,7 @@ const Post = ({
                     alt={`${title}. Article image`}
                 />
             )}
-            {showLikeShareSection && (
+            {showLikeCommentSection && (
                 <div className={postFooterClass}>
                     <IconButton
                         className={buttonClass}
