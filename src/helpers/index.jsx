@@ -1,3 +1,4 @@
+import { getCurratorPosts } from './curatorFeed.helper';
 import { mapNetlifyPost } from './netlifyCMS.helper';
 
-export { mapNetlifyPost };
+export { getCurratorPosts, mapNetlifyPost };

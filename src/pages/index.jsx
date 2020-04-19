@@ -1,17 +1,23 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { graphql } from 'gatsby';
 
-// import { CARD_DATA_PROPS } from '../dummy_data/constants';
 import { Header } from '../components/header';
 import { Filter } from '../components/filter';
 import { PostGallery } from '../components/post-gallery';
-import { mapNetlifyPost } from '../helpers/';
+import { getCurratorPosts, mapNetlifyPost } from '../helpers/';
 
 import '../style/index.scss';
 import './index.scss';
 
 const RootComponent = data => {
-    const cardDataProps = mapNetlifyPost(data);
+    const [cardDataProps, setCardDataProps] = useState(mapNetlifyPost(data));
+
+    useEffect(() => {
+        getCurratorPosts().then(resp => {
+            console.log(resp);
+            setCardDataProps([...cardDataProps, ...resp]);
+        });
+    }, []);
 
     return (
         <>
@@ -19,7 +25,6 @@ const RootComponent = data => {
             <main>
                 <Filter />
                 <PostGallery postsProps={cardDataProps} />
-                {/* <PostGallery postsProps={CARD_DATA_PROPS} /> */}
             </main>
         </>
     );
