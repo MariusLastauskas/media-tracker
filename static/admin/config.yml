@@ -14,7 +14,18 @@ collections:
       editor:
           preview: false
       fields:
-          - { label: 'IsEvent', name: 'isEvent', widget: 'boolean' }
+          - {
+                label: 'IsEvent',
+                name: 'isEvent',
+                widget: 'boolean',
+                required: false,
+            }
+          - {
+                label: 'ShowLikeCommentSection',
+                name: 'showLikeCommentSection',
+                widget: 'boolean',
+                required: false,
+            }
           - { label: 'Title', name: 'title', widget: 'string', required: false }
           - { label: 'Publish Date', name: 'date', widget: 'datetime' }
           - { label: 'Body', name: 'body', widget: 'markdown', required: false }
