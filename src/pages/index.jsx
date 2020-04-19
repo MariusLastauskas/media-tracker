@@ -11,19 +11,28 @@ import './index.scss';
 
 const RootComponent = data => {
     const [cardDataProps, setCardDataProps] = useState(mapNetlifyPost(data));
+    const [filteredCardDataProps, setFilteredCardDataProps] = useState({});
 
     useEffect(() => {
         getCurratorPosts().then(resp => {
-            setCardDataProps(sortPosts([...cardDataProps, ...resp]));
+            const allPosts = sortPosts([...cardDataProps, ...resp]);
+
+            setCardDataProps(allPosts);
+            setFilteredCardDataProps(allPosts);
         });
     }, []);
+
+    const handleFilterChange = filterRule => {
+        const filteredPosts = cardDataProps.filter(filterRule);
+        setFilteredCardDataProps(filteredPosts);
+    };
 
     return (
         <>
             <Header />
             <main>
-                <Filter />
-                <PostGallery postsProps={cardDataProps} />
+                <Filter onChange={handleFilterChange} />
+                <PostGallery postsProps={filteredCardDataProps} />
             </main>
         </>
     );

@@ -8,9 +8,12 @@ import './post-gallery.scss';
 const PostGallery = ({ postsProps, ...other }) => {
     const mainComponentClass = 'post-gallery';
 
-    const DataProps = postsProps.map((cardProps, key) => (
-        <Post key={key} {...cardProps} />
-    ));
+    const DataProps =
+        postsProps.length > 0
+            ? postsProps.map((cardProps, key) => (
+                  <Post key={key} {...cardProps} />
+              ))
+            : null;
 
     return (
         <div className={mainComponentClass} {...other}>

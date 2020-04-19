@@ -5,7 +5,7 @@ import { FILTER_BUTTONS_PROPS } from './constants';
 
 import './filter.scss';
 
-const Filter = () => {
+const Filter = ({ onChange, ...other }) => {
     const mainComponentClass = 'filter';
     const buttonClass = `${mainComponentClass}__button`;
     const wrapperClass = `${mainComponentClass}__wrapper`;
@@ -14,9 +14,10 @@ const Filter = () => {
     );
 
     const FilterButtons = FILTER_BUTTONS_PROPS.map(
-        ({ name, ...buttonProps }) => {
+        ({ filterFunction, name, ...buttonProps }) => {
             const isActive = activeFilter === name;
             const setActive = () => {
+                onChange(filterFunction);
                 setActiveFilter(name);
             };
 
@@ -33,7 +34,7 @@ const Filter = () => {
     );
 
     return (
-        <div className={mainComponentClass}>
+        <div className={mainComponentClass} {...other}>
             <div className={wrapperClass}>{FilterButtons}</div>
         </div>
     );
