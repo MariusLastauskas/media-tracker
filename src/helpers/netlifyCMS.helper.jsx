@@ -1,15 +1,5 @@
-import { MONTHS, NETLIFY_POST_AUTHOR, NETLIFY_POST_AVATAR } from './constants';
-
-const getDateString = input => {
-    const date = new Date(input);
-    const todayDate = new Date();
-
-    const isToday =
-        date.getMonth() === todayDate.getMonth() &&
-        date.getDate() === todayDate.getDate();
-
-    return isToday ? 'TODAY' : `${MONTHS[date.getMonth()]} ${date.getDate()}D`;
-};
+import { NETLIFY_POST_AUTHOR, NETLIFY_POST_AVATAR } from './constants';
+import { getDateString } from './utils';
 
 export const mapNetlifyPost = data => {
     const cardDataProps = [];
