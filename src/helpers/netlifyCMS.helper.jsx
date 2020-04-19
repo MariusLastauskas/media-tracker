@@ -17,6 +17,7 @@ export const mapNetlifyPost = data => {
     data.data.allFile.edges.forEach(element => {
         const elementHtml = element.node.childMarkdownRemark.html;
         const elementData = element.node.childMarkdownRemark.frontmatter;
+        console.log(elementData);
 
         cardDataProps.push({
             avatarImage: NETLIFY_POST_AVATAR,
@@ -24,6 +25,7 @@ export const mapNetlifyPost = data => {
             image: elementData.image,
             isBlog: true,
             isEvent: elementData.isEvent,
+            showLikeCommentSection: elementData.showLikeCommentSection,
             name: NETLIFY_POST_AUTHOR,
             text: elementHtml,
             title: elementData.title,

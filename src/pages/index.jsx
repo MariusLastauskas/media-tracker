@@ -39,6 +39,7 @@ export const query = graphql`
                             description
                             image
                             isEvent
+                            showLikeCommentSection
                             title
                         }
                         html
