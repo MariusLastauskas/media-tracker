@@ -1,6 +1,6 @@
 export const FILTER_BUTTONS_PROPS = [
     {
-        filterFunction: post => true,
+        filterFunction: () => true,
         label: 'All',
         name: 'All',
     },
