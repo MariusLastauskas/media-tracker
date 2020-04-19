@@ -8,4 +8,3 @@ date: 2020-04-18T14:13:27.181Z
 image: ''
 description: We will eat pizza
 ---
-> In pizza we trust
