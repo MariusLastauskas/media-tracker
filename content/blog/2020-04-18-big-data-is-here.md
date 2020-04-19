@@ -4,7 +4,7 @@ author: Marius Lastauskas
 isEvent: false
 showLikeCommentSection: true
 title: Big data is here.
-date: 2020-04-18T12:38:46.861Z
+date: 2020-04-01T12:38:46.861Z
 image: /img/big_data.png
 description: Big data
 ---
