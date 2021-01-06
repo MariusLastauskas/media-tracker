@@ -24,7 +24,7 @@
   "dependencies": {
     "@typescript-eslint/eslint-plugin": "^2.25.0",
     "@typescript-eslint/parser": "^2.25.0",
-    "axios": "^0.19.2",
+    "axios": "^0.21.1",
     "classnames": "^2.2.6",
     "gatsby": "^2.19.45",
     "gatsby-plugin-netlify-cms": "^4.2.1",
